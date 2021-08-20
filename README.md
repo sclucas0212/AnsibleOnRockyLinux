@@ -28,9 +28,9 @@ Check Ansible version
 
     $ ansible --version
     
-If you receive a message about not being on python 3.8 use the following command line utility to point python to python 3.8
+If you receive a message about not being on python 3.8 with ansible, use the following command line utility to point python to python 3.8
 
-    $ update-alternatives --config python
+    $ update-alternatives --config python3
     
   
 
