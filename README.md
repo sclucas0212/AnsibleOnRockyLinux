@@ -32,8 +32,16 @@ If you receive a message about not being on python 3.8 with ansible, use the fol
 
     $ update-alternatives --config python3
     
+ I had to rerun - sudo pip3 install ansible - to get Ansible to use Python 3.8
   
+Since we used pip ton install ansible we have to manually create ansible.cfg
 
+    $ sudo mkdir /etc/ansible
+    $ sudo curl -o /etc/ansible/ansible.cfg https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg
+    $ sudo curl -o /etc/ansible/hosts https://raw.githubusercontent.com/ansible/ansible/devel/examples/hosts
+    
+    
+    
 
 ### References
 [Installation on the management server](https://docs.rockylinux.org/books/learning_ansible/01-bases)
