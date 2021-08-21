@@ -41,7 +41,13 @@ Since we used pip ton install ansible we have to manually create ansible.cfg
     $ sudo curl -o /etc/ansible/hosts https://raw.githubusercontent.com/ansible/ansible/devel/examples/hosts
     
     
-    
+#### Other setup/install notes
+
+Install epel-release on any client machines.  You will need to do this to install sshpass
+
+Install sshpass on ansible server and client machines
+
+    $ sudo yum -y install sshpass
 
 ### References
 [Installation on the management server](https://docs.rockylinux.org/books/learning_ansible/01-bases)
